@@ -746,8 +746,11 @@ def monte_carlo_iter(df_input, mc):
     std_col = ['SiO2_std','TiO2_std', 'Al2O3_std', 'FeO_std', 'MnO_std', 'MgO_std', 
            'CaO_std','Na2O_std', 'K2O_std', 'P2O5_std', 'NiO_std', 'Cr2O3_std']
 
-    liq_comps = df_input[columns].fillna(0)
-    liq_comps_std = df_input[std_col].fillna(0)
+    try: 
+        liq_comps = df_input[columns].fillna(0)
+        liq_comps_std = df_input[std_col].fillna(0)
+    except NameError:
+        print("Check whether you modified the column names in the template")
 
     df_out = pd.DataFrame()
     for sample_row in range(len(liq_comps)):                                #Performs mc simulations on each sample in liq_comps df and combines into df_out
