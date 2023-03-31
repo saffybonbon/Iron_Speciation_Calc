@@ -2,6 +2,8 @@
 
 Python tool to estimate melt FeO and Fe2O3 from FeOt, with error propagation via monte carlo simulation.
 
+You will need to download the script "fe_partition_calc.py" and the excel file "Iron_speciation_calculator_input". The file "Fe_calculator_tutorial_workbook.ipynb" contains examples for how the function works, using example data in the input spreadsheet. The file "Iron_speciation_calculator_tutorial_output.xlsx" contains the results you should obtain from running the example data in the input spreadsheet.
+
 #### Input Spreadsheet:
 
   - Temperature is given in °K
