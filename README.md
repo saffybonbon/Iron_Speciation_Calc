@@ -30,3 +30,7 @@ You will need to download the script "fe_speciation_calc.py" and the excel file 
   For plotting:
   - matplotlib
   - seaborn
+  
+ ### Contact
+ 
+ Feel free to contact me at saffy.thorn@kuleuven.be if you have any issues/suggestions.
